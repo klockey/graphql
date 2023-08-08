@@ -6,7 +6,11 @@ type Dog {
 }
 
 type Query {
- findAllDogs: [Dog]!
+  findAllDogs: [Dog]!
+}
+
+type Query {
+ name: [Dog]!
 }
 
 type Mutation {

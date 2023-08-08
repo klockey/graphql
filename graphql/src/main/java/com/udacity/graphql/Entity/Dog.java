@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 
 @Entity
 public class Dog {
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
     private String breed;
@@ -15,9 +15,7 @@ public class Dog {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public void setId(int Long) { this.id = id; }
 
     public String getName() {
         return name;
